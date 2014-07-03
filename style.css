@@ -1,0 +1,268 @@
+@-webkit-keyframes animate_background1 {
+	  0% {
+	    background-position: 0 -30px;
+	  }
+    50% {
+        background-position: 100 -200px;
+    }
+	  100% {
+	    background-position: 200px -30px;
+	  }	}
+	@-moz-keyframes animate_background1 {
+	  0% {
+	    background-position: 0 -30px;
+	  }
+	  100% {
+	    background-position: 257px -30px;
+	  }
+	}
+	@-ms-keyframes animate_background1 {
+	  0% {
+	    background-position: 0 -30px;
+	  }
+	  100% {
+	    background-position: 257px -30px;
+	  }
+	}
+	@-o-keyframes animate_background1 {
+	  0% {
+	    background-position: 0 -30px;
+	  }
+	  100% {
+	    background-position: 257px -30px;
+	  }
+	}
+	@keyframes animate_background1 {
+	  0% {
+	    background-position: 0 -30px;
+	  }
+	  100% {
+	    background-position: 257px -30px;
+  }
+	}
+	 
+	.background1 {
+	    position: fixed;
+	    z-index: 2;
+	    margin-top: 0%;
+	    padding: 0px 0px 0px 0px;
+	    width: 100% !important;
+	    max-width: 100% !important;
+	    min-width: 100% !important;
+	    height: 100% !important;
+	    max-height: 100% !important;
+	    min-height: 100% !important;
+	    background: url("images/cloud-1.png");
+	    background-repeat: repeat-x;
+	    -webkit-animation: animate_background1 40s linear;
+	    -webkit-animation-iteration-count: infinite;
+	    -moz-animation: animate_background1 40s linear;
+	    -moz-animation-iteration-count: infinite;
+	    -ms-animation: animate_background1 40s linear;
+	    -ms-animation-iteration-count: infinite;
+	    -o-animation: animate_background1 40s linear;
+	    -o-animation-iteration-count: infinite;
+	    animation: animate_background1 40s linear;
+	    animation-iteration-count: infinite;
+	    opacity:0.4;
+	    filter:alpha(opacity=80);
+	} 
+	@-webkit-keyframes animate_background2 {
+	  0% {
+	    background-position: 0 -50px;
+	  }
+	  100% {
+	    background-position: 259px -50px;
+	  }
+	}
+	@-moz-keyframes animate_background2 {
+	  0% {
+	    background-position: 0 -50px;
+	  }
+	  100% {
+	    background-position: 259px -50px;
+	  }
+	}
+	@-ms-keyframes animate_background2 {
+	  0% {
+	    background-position: 0 -50px;
+	  }
+	  100% {
+	    background-position: 259px -50px;
+	  }
+	}
+	@-o-keyframes animate_background2 {
+	  0% {
+	    background-position: 0 -50px;
+	  }
+	  100% {
+	    background-position: 259px -50px;
+	  }
+}
+	@keyframes animate_background2 {
+	  0% {
+	    background-position: 0 -50px;
+	  }
+	  100% {
+	    background-position: 259px -50px;
+	  }
+	}
+	 
+	.background2 {
+	    position: fixed;
+	    z-index: 3;
+	    margin: 0px auto 0px auto !important;
+	    padding: 0px 0px 0px 0px;
+	    width: 100% !important;
+	    max-width: 100% !important;
+	    min-width: 100% !important;
+	    height: 100% !important;
+	    max-height: 100% !important;
+	    min-height: 100% !important;
+	    background: url("images/cloud-2.png");
+	    background-repeat: repeat-x;
+	    -webkit-animation: animate_background2 20s linear;
+	    -webkit-animation-iteration-count: infinite;
+	    -moz-animation: animate_background2 20s linear;
+	    -moz-animation-iteration-count: infinite;
+	    -ms-animation: animate_background2 20s linear;
+	    -ms-animation-iteration-count: infinite;
+	    -o-animation: animate_background2 20s linear;
+	    -o-animation-iteration-count: infinite;
+	    animation: animate_background2 20s linear;
+	    animation-iteration-count: infinite;
+	    opacity:0.4;
+	    filter:alpha(opacity=60);
+	}
+	 
+	@-webkit-keyframes animate_background3 {
+	  0% {
+	    background-position: 0 -50px;
+	  }
+	  100% {
+	    background-position: 257px -50px;
+	  }
+	}
+	@-moz-keyframes animate_background3 {
+	  0% {
+	    background-position: 0 -50px;	  }
+	  100% {
+	    background-position: 257px -50px;
+	  }
+	}
+	@-ms-keyframes animate_background3 {
+	  0% {
+	    background-position: 0 -50px;
+	  }
+	  100% {
+	    background-position: 257px -50px;
+	  }
+	}
+	@-o-keyframes animate_background3 {
+	  0% {
+	    background-position: 0 -50px;
+	  }
+	  100% {
+	    background-position: 257px -50px;	  }
+	}
+	@keyframes animate_background3 {
+	  0% {
+	    background-position: 0 -50px;
+	  }
+	  100% {
+	    background-position: 257px -50px;
+	  }
+	}
+	 
+	.background3 {	    position: fixed;
+	    z-index: 4;
+	    margin: 0px auto 0px auto !important;
+	    padding: 0px 0px 0px 0px;
+	    width: 100% !important;
+	    max-width: 100% !important;
+	    min-width: 100% !important;
+	    height: 100% !important;
+	    max-height: 100% !important;
+	    min-height: 100% !important;
+	    background: url("images/cloud-1.png");
+	    background-repeat: repeat-x;
+	    -webkit-animation: animate_background3 15s linear;
+	    -webkit-animation-iteration-count: infinite;
+	    -moz-animation: animate_background3 15s linear;
+	    -moz-animation-iteration-count: infinite;
+	    -ms-animation: animate_background3 15s linear;
+	    -ms-animation-iteration-count: infinite;
+	    -o-animation: animate_background3 15s linear;
+	    -o-animation-iteration-count: infinite;
+	    animation: animate_background3 15s linear;
+	    animation-iteration-count: infinite;
+	    opacity:0.4;
+	    filter:alpha(opacity=80);
+	}
+	 
+	@-webkit-keyframes animate_background4 {
+	  0% {
+	    background-position: 0 -75px;
+	  }
+	  100% {
+	    background-position: 259px -75px;
+	  }
+	}
+	@-moz-keyframes animate_background4 {
+	  0% {
+    background-position: 0 -75px;
+	  }
+	  100% {
+	    background-position: 259px -75px;
+	  }
+	}
+	@-ms-keyframes animate_background4 {
+	  0% {
+	    background-position: 0 -75px;
+  }
+	  100% {
+	    background-position: 259px -75px;
+	  }
+	}
+	@-o-keyframes animate_background4 {
+	  0% {
+	    background-position: 0 -75px;
+	  }
+	  100% {
+	    background-position: 259px -75px;
+	  }
+	}
+	@keyframes animate_background4 {
+	  0% {
+	    background-position: 0 -75px;
+	  }
+	  100% {
+	    background-position: 259px -75px;
+	  }
+	}
+	 
+	.background4 {	    position: fixed;
+	    z-index: 5;
+	    margin: 0px auto 0px auto !important;
+	    padding: 0px 0px 0px 0px;
+	    width: 100% !important;
+	    max-width: 100% !important;
+	    min-width: 100% !important;
+	    height: 100% !important;
+	    max-height: 100% !important;
+	    min-height: 100% !important;
+	    background: url("images/cloud-2.png");
+	    background-repeat: repeat-x;
+	    -webkit-animation: animate_background4 10s linear;
+	    -webkit-animation-iteration-count: infinite;
+	    -moz-animation: animate_background4 10s linear;
+	    -moz-animation-iteration-count: infinite;
+	    -ms-animation: animate_background4 10s linear;
+	    -ms-animation-iteration-count: infinite;
+	    -o-animation: animate_background4 10s linear;
+	    -o-animation-iteration-count: infinite;
+	    animation: animate_background4 10s linear;
+	    animation-iteration-count: infinite;
+	    opacity:0.4;
+	    filter:alpha(opacity=60);
+	}
