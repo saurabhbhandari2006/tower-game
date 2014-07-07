@@ -1,0 +1,27 @@
+var myJSONObject = [
+{
+"card1":{
+"id":"card",
+"red": "6",
+"blue":"0",
+"green":"0",
+"attack": "5"
+}
+}
+];
+
+
+
+var myJSONObject = [{"Form":
+{
+"name": "assets/img/wrongcheque.jpg",
+"Fields":[
+{"Field":{"data":"SIGNATURE","top":"145","left":"420","height":"50","width":"150"}},
+{"Field":{"data":"PAY","top":"47","left":"80","height":"30","width":"350"}},
+{"Field":{"data":"AW","top":"85","left":"130","height":"48","width":"272"}},
+{"Field":{"data":"AF","top":"100","left":"415","height":"30","width":"160"}},
+{"Field":{"data":"DATE","top":"30","left":"445","height":"30","width":"135"}}
+]
+}
+}
+];
