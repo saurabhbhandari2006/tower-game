@@ -38,7 +38,6 @@ $(document).ready(function () {
     var tower_health = 60;
     var cal_health_tower;
     var r40_50 = false;
-    var r40_50_dec = false;
     var r30_40 = false;
     var r20_30 = false;
     var r10_20 = false;
@@ -76,9 +75,10 @@ console.log(cal_health_tower);
             $("#blue_score").text(calBlue);
             $("#green_score").text(calGreen);
         }
-        if (r40_50==false){
-            if (between(cal_health_tower, 39 , 50)) {
-                console.log("do nothing");
+
+//        if (r40_50==false){
+//            if (between(cal_health_tower, 39 , 50)) {
+//                console.log("do nothing");
 
         if (r40_50==false){
             if (between(cal_health_tower, 39 , 50)) {
@@ -173,5 +173,5 @@ function between(x, min, max) {
 
 function card_click(this_card_index){
     console.log($($(".cards")[this_card_index]).attr('class'));
-}
+};
 
