@@ -29,8 +29,13 @@
                 <img class="tower" id="tower1" src="images/right_tower.png">
             </div>
             <div id="tower_container2">
-                <img class="tower"  id="tower2" src="images/right_tower.png">
-                <!--<img class="tower"  id="tower2" src="images/right/Layer5.png">-->
+                <!--<img class="tower"  id="tower2" src="images/right_tower.png">-->
+                <img class="tower"  id="t_block_1" src="images/right/Layer5.png">
+                <img class="tower"  id="t_block_2" src="images/right/Layer5.png">
+                <img class="tower"  id="t_block_3" src="images/right/Layer5.png">
+                <img class="tower"  id="t_block_4" src="images/right/Layer5.png">
+                <img class="tower"  id="t_block_5" src="images/right/Layer5.png">
+                <span id="tower_health"></span>
             </div>
         </div>
 
@@ -86,13 +91,14 @@
 
     $(function(){
         newArray = swapImage(theImages);
-        var red_val, blue_val, green_val, attack_val;
+        var red_val, blue_val, green_val, attack_val, card_type;
         $.each( newArray, function( index, value ){
             red_val = eval("myCards[0]."+value.substr(value.indexOf("/") + 1).split(".")[0]+".red");
             blue_val = eval("myCards[0]."+value.substr(value.indexOf("/") + 1).split(".")[0]+".blue");
             green_val = eval("myCards[0]."+value.substr(value.indexOf("/") + 1).split(".")[0]+".green");
             attack_val = eval("myCards[0]."+value.substr(value.indexOf("/") + 1).split(".")[0]+".attack");
-            $('.card_slot').find('.cards').eq(index).append('<img data-val-green="'+green_val+'" data-val-blue="'+blue_val+'" data-val-red="'+red_val+'" src="'+value+'" data-val-attack="'+attack_val+'">');
+            card_type = eval("myCards[0]."+value.substr(value.indexOf("/") + 1).split(".")[0]+".type");
+            $('.card_slot').find('.cards').eq(index).append('<img data-val-type="'+card_type+'" data-val-green="'+green_val+'" data-val-blue="'+blue_val+'" data-val-red="'+red_val+'" src="'+value+'" data-val-attack="'+attack_val+'">');
         });
     });
 

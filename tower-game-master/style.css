@@ -151,7 +151,6 @@ body {
     left: 0%;
     background-size: 100% 100%;
 }
-
 .background_image {
     width: 100%;
     height: 768px;
@@ -203,13 +202,62 @@ body {
     /*border: 2px solid black;*/
 }
 
+#tower_container2 img {
+    position: absolute;
+}
+
+#tower_container2 #t_block_1 {
+    height: 15%;
+    width: 40%;
+    bottom: 0;
+    left: 0;
+}
+
+#tower_container2 #t_block_2 {
+    height: 15%;
+    width: 38%;
+    bottom: 13%;
+    left: 1%;
+}
+
+#tower_container2 #t_block_3 {
+    height: 15%;
+    width: 36%;
+    bottom: 26%;
+    left: 2%;
+}
+
+#tower_container2 #t_block_4 {
+    height: 15%;
+    width: 34%;
+    bottom: 39%;
+    left: 3%;
+}
+
+#tower_container2 #t_block_5 {
+    height: 15%;
+    width: 32%;
+    bottom: 52%;
+    left: 4%;
+}
+
 #tower1 {
     width: 100%;
     height: 100%;
 }
-#tower2 {
-    width: 100%;
+/*#tower3 {*/
+    /*/width: 100%;*/
+    /*height: 100%;*/
+    /*position: absolute;*/
+    /*bottom: 0px;*/
+/*}*/
+#tower_health{
+    display: none;
+}
+
+#tower2{
     height: 100%;
+    width: 100%;
 }
 .tower2-replace{
     bottom: 0%;
