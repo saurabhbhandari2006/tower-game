@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<title>Tower Defense game</title>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="score.js"></script>
+<script type="text/javascript" src="random.js"></script>
+
+<style>
+
+</style>
+</head>
+<body>
+<div class="background_container">
+    <img class="background_image" src="images/background.jpg" alt="background">
+
+    <div class="cloud_container">
+        <div class="background1"></div>
+        <div class="background2"></div>
+        <!--<div class="background3"></div>-->
+        <!--<div class="background4"></div>-->
+    </div>
+    <div class="tower_card_container">
+        <div class="tower_container_wrapper">
+            <div id="tower_container1">
+                <img class="tower" id="tower1" src="images/right_tower.png">
+            </div>
+            <div id="tower_container2">
+                <img class="tower"  id="tower2" src="images/right_tower.png">
+                <!--<img class="tower"  id="tower2" src="images/right/Layer5.png">-->
+            </div>
+        </div>
+
+        <!---  card slot from here  -->
+        <div class="card_slot">
+
+            <div class="card_slot1 cards">
+
+            </div>
+            <div class="card_slot2 cards">
+
+            </div>
+            <div class="card_slot3 cards">
+
+            </div>
+            <!--<div class="card_slot4 cards">-->
+
+            <!--</div>-->
+            <!--<div class="card_slot5 cards">-->
+
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+<!--- end here-->
+
+<div class="resource">
+    <div class="resource1">
+        <div class="resource_name">Red
+        <div class="resource_score" id="red_score">
+
+        </div>
+    </div>
+    </div>
+    <div class="resource2">
+        <div class="resource_name">Blue
+            <div class="resource_score" id="blue_score"></div>
+    </div>
+    </div>
+    <div class="resource3">
+        <div class="resource_name">Green
+            <div class="resource_score" id="green_score"></div>
+        </div>
+    </div>
+</div>
+<!--<div class="question_panel">-->
+<!--<div class="question"></div>-->
+<!--</div>-->
+
+<script>
+    var theImages =[myCards[0].card1.image, myCards[0].card2.image,myCards[0].card3.image];
+    var user_turn, comp_turn;
+
+    $(function(){
+        newArray = swapImage(theImages);
+        var red_val, blue_val, green_val, attack_val;
+        $.each( newArray, function( index, value ){
+            red_val = eval("myCards[0]."+value.substr(value.indexOf("/") + 1).split(".")[0]+".red");
+            blue_val = eval("myCards[0]."+value.substr(value.indexOf("/") + 1).split(".")[0]+".blue");
+            green_val = eval("myCards[0]."+value.substr(value.indexOf("/") + 1).split(".")[0]+".green");
+            attack_val = eval("myCards[0]."+value.substr(value.indexOf("/") + 1).split(".")[0]+".attack");
+            $('.card_slot').find('.cards').eq(index).append('<img data-val-green="'+green_val+'" data-val-blue="'+blue_val+'" data-val-red="'+red_val+'" src="'+value+'" data-val-attack="'+attack_val+'">');
+        });
+    });
+
+</script>
+</body>
+</html>
